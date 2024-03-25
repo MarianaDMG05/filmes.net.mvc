@@ -1,7 +1,7 @@
 
 namespace MeusFilmes.Models
 {
-    public class Tipo
+    public class Genero
     {
         public string Nome { get ;  set; }
         
