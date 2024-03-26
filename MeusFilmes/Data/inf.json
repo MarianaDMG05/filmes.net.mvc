@@ -1,30 +1,34 @@
 ﻿[
   {
+    "Id": 1,
     "Nome": "La Casa De Papel",
     "Descricao": "Oito ladrões se trancam com reféns na Casa da Moeda da Espanha. Seu líder manipula a polícia para realizar um plano que pode ser o maior roubo da história ou uma missão em vão.",
-    "Genero": ["Ação"],
-    "Imagem": "//img//lacasadepapel.jpg"
+    "Genero": ["Ação","Drama"],
+    "Imagem": "\\img\\lacasadepapel.jpg"
   },
   
     {
+      "Id": 2,
       "Nome": "The  Walking Dead",
       "Descricao": "Baseado na história em quadrinhos escrita por Robert Kirkman, este drama potente e visceral retrata a vida nos Estados Unidos pós-apocalíptico. Um grupo de sobreviventes, liderado pelo policial Rick Grimes, segue viajando em busca de uma nova moradia segura e distante dos mortos-vivos. A pressão para permanecerem vivos e lutarem pela sobrevivência faz com que muitos do grupo sejam submetidos às mais profundas formas de crueldade humana. Rick acaba descobrindo que o tão assustador desespero pela subsistência pode ser ainda mais fatal do que os próprios mortos-vivos que os rodeiam.",
-      "Genero": ["Terror"],
-      "Imagem": "//img//twd.webp"
+      "Genero": ["Terror","Drama"],
+      "Imagem": "\\img\\twd.webp"
     },
   
     {
+      "Id": 3,
       "Nome": "Brooklyn Nine-Nine",
       "Descricao": "Jake Peralta é um detetive brilhante e ao mesmo tempo imaturo, que nunca precisou se preocupar em respeitar as regras. Tudo muda quando um capitão exigente assume o comando de seu esquadrão e Jake deve aprender a trabalhar em equipe",
-      "Genero": ["Comédia"],
-      "Imagem": "//img//b99.jpg"
+      "Genero": ["Comédia", "Ação"],
+      "Imagem": "\\img\\b99.jpg"
     },
  
     {
+      "Id": 4,
       "Nome": "Breaking Bad",
       "Descricao": "O professor de química Walter White não acredita que sua vida possa piorar ainda mais. Quando descobre que tem câncer terminal, Walter decide arriscar tudo para ganhar dinheiro enquanto pode, transformando sua van em um laboratório de metanfetamina.",
-      "Genero": ["Drama"],
-      "Imagem": "//img//brba.jpg"
+      "Genero": ["Ação", "Drama"],
+      "Imagem": "\\img\\brba.jpg"
     } 
  
   ]

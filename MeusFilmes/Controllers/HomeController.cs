@@ -24,10 +24,39 @@ public class HomeController : Controller
             series = JsonSerializer.Deserialize<List<Serie>>(dados);
         }
         
-        ViewData["Generos"] = series;
+        List<Genero> genero =[];
+        using (StreamReader leitor = new("Data\\tipos.json"))
+        {
+            string dados = leitor.ReadToEnd();
+            genero = JsonSerializer.Deserialize<List<Genero>>(dados);
+        }
+        ViewData["Generos"] = genero;
         return View(series);
     }
 
+    public IActionResult Details(int id)
+    {
+        List<Serie> series =[];
+        using (StreamReader leitor = new("Data\\inf.json"))
+        {
+            string dados = leitor.ReadToEnd();
+            series = JsonSerializer.Deserialize<List<Serie>>(dados);
+        }
+        
+        List<Genero> genero =[];
+        using (StreamReader leitor = new("Data\\tipos.json"))
+        {
+            string dados = leitor.ReadToEnd();
+            genero = JsonSerializer.Deserialize<List<Genero>>(dados);
+        }
+        ViewData["Generos"] = genero;
+        var serie = series 
+        .Where(p => p.Id == id)
+        .FirstOrDefault();
+        return View(serie);
+
+    }
+    
     public IActionResult Privacy()
     {
         return View();
