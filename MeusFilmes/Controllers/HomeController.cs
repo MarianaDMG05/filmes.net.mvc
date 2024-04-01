@@ -49,14 +49,15 @@ public class HomeController : Controller
             string dados = leitor.ReadToEnd();
             genero = JsonSerializer.Deserialize<List<Genero>>(dados);
         }
-        ViewData["Generos"] = genero;
-        var serie = series 
-        .Where(p => p.Id == id)
-        .FirstOrDefault();
-        return View(serie);
-
-    }
-    
+        
+        DetailsVM details = new () {
+           Generos = genero,
+           Atual = series.FirstOrDefault(p => p.Id == id),
+           Anterior = series.OrderByDescending(p => p.Id).FirstOrDefault(p => p.Id< id),
+           Proximo = series.OrderBy(p => p.Id).FirstOrDefault(p => p.Id > id),
+           };
+           return View(details);
+    }    
     public IActionResult Privacy()
     {
         return View();
